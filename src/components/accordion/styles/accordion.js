@@ -11,12 +11,16 @@ export const Inner = styled.div`
     flex-direction: column;
     max-width: 815px;
     margin: auto;
+  
+   
 `;
 
 export const Item = styled.div`
   color: white;
+  margin: auto;
   margin-bottom: 10px;
-  max-width: 670px;
+  max-width: 700px;
+  width: 100%;
 
   &:first-of-type {
     margin-top: 3em;
@@ -75,4 +79,8 @@ export const Title = styled.h1`
   @media (max-width: 600px) {
     font-size: 35px;
   }
+`;
+
+export const Frame = styled.div`
+  margin-bottom: 40px;
 `;

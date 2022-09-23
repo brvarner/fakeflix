@@ -53,3 +53,7 @@ Accordion.Body = function AccordionBody({ children, ...restProps }) {
 
   return toggleShow ? <Body {...restProps}>{children}</Body> : null;
 };
+
+Accordion.Frame = function AccordionFrame({ children, ...restProps }) {
+  return <Frame {...restProps}>{children}</Frame>;
+};
