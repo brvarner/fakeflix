@@ -22,7 +22,7 @@ export function IsUserRedirect({ user, loggedInPath, ...rest }) {
         {...rest}
         replace
         to={{
-          loggedInPath,
+          loggedInPath
         }}
       />
     );
@@ -45,7 +45,7 @@ export function ProtectedRoute({ user, children, ...rest }) {
     return <Outlet {...rest} />;
   } else {
     return (
-      <Navigate {...rest} replace to={"/signin"} state={location.pathname} />
+      <Navigate {...rest} replace to={"/signin"} state={location} />
     );
   }
 }
