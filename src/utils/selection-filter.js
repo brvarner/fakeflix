@@ -1,8 +1,4 @@
 export default function selectionFilter({ series, films }) {
-  let genreArr = [];
-  let test = series.filter((item) => item.genre === "documentaries");
-  console.log({ test });
-  console.log({ series });
   return {
     series: [
       {

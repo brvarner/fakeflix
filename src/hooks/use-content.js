@@ -3,7 +3,6 @@ import { FirebaseContext } from "../contexts/firebase";
 import { getDocs, collection, query, getFirestore } from "firebase/firestore";
 
 export default function useContent(target) {
-  const contentArr = [];
   const [content, setContent] = useState([]);
   const { db } = useContext(FirebaseContext);
   const dbInstance = getFirestore(db);
@@ -18,12 +17,12 @@ export default function useContent(target) {
 
     // We're pulling out the docId here so that we can have a unique ID on each item to act as the key
     if (querySnapshot) {
-      console.log("check");
-      querySnapshot.forEach((doc) => {
-        contentArr.push({ [doc.id]: doc.data() });
-      });
+      let allContent = querySnapshot.docs.map((contentObj) => ({
+        ...contentObj.data(),
+        docId: contentObj.id,
+      }));
 
-      setContent(contentArr);
+      setContent(allContent);
     }
   };
 
