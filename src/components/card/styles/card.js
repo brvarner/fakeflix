@@ -121,7 +121,8 @@ export const FeatureClose = styled.button`
 export const Maturity = styled.div`
   background-color: ${({ rating }) => (rating >= 15 ? "red" : "green")};
   border-radius: 15px;
-  width: 20px;
+  width: 28px;
+  line-height: 28px;
   text-align: center;
   color: white;
   font-weight: bold;
