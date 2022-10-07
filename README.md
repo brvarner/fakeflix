@@ -4,6 +4,6 @@ I built this Netflix clone application from the 10-hour tutorial by Karl Hadwen 
 
 I used compound components (just a design pattern) to build my components, and there's over 10 examples as to how these are used. The styling is all handled via styled components. There's a bit of mixed syntax from older versions of Firebase and newer, but everything works as planned.
 
-### You can visit the site here to see it in action: 
+### You can visit the site here to see it in action: https://fakeflix-vercel.vercel.app/
 
 <img width="1636" alt="netflix-preview-min" src="https://user-images.githubusercontent.com/84243251/194638504-ce4ee985-b1d8-45c9-af00-b6738e0a1b43.png">
