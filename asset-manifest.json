@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fakeflix/static/css/main.58462fbc.css",
+    "main.js": "/fakeflix/static/js/main.3828eca4.js",
+    "index.html": "/fakeflix/index.html",
+    "main.58462fbc.css.map": "/fakeflix/static/css/main.58462fbc.css.map",
+    "main.3828eca4.js.map": "/fakeflix/static/js/main.3828eca4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58462fbc.css",
+    "static/js/main.3828eca4.js"
+  ]
+}
