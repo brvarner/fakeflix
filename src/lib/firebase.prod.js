@@ -3,18 +3,20 @@ import "firebase/compat/firestore";
 import "firebase/compat/analytics";
 import "firebase/compat/auth";
 import { getFirestore } from "firebase/firestore";
+
+
 // import { seedDatabase } from "../seed";
 
 // 1) when seeding the database you'll have to uncomment this!
 // import { seedDatabase } from '../seed';
 
 const config = {
-  apiKey: "AIzaSyCYWWHAXi8zZjQPGGgEixolmBFfCFfBMAo",
-  authDomain: "netflix-2219f.firebaseapp.com",
-  projectId: "netflix-2219f",
-  storageBucket: "netflix-2219f.appspot.com",
-  messagingSenderId: "473153618537",
-  appId: "1:473153618537:web:62872ab862841e99d5d8f8",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 const db = firebase.initializeApp(config);
