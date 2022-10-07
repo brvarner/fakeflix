@@ -6,3 +6,4 @@ I used compound components (just a design pattern) to build my components, and t
 
 ### You can visit the site here to see it in action: 
 
+<img width="1636" alt="netflix-preview-min" src="https://user-images.githubusercontent.com/84243251/194638504-ce4ee985-b1d8-45c9-af00-b6738e0a1b43.png">
